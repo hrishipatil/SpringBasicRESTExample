@@ -1,11 +1,8 @@
 package com.test.spring;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
  * Created by hpatil on 6/23/16.
  */
-@XmlRootElement(name="Dummy")
 public class Dummy {
     public String getName() {
         return name;

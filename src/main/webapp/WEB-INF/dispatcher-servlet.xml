@@ -24,5 +24,6 @@
 
     <!-- creates a controller at /api-docs from this uri, which serves swagger's raw documentation in JSON format. -->
     <bean class="com.mangofactory.swagger.configuration.DocumentationConfig" id="documentationConfig"/>
+    <bean class="com.test.spring.service.SpringServiceImpl" id="service" name="service"/>
 
 </beans>
