@@ -10,6 +10,11 @@
     <packaging>war</packaging>
 
     <properties>
+        <junit.version>4.12</junit.version>
+        <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
+        <build-helper-maven-plugin.version>1.9.1</build-helper-maven-plugin.version>
+        <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
+        <mockito-all.version>1.9.5</mockito-all.version>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.spring>3.2.4.RELEASE</version.spring>
@@ -56,6 +61,19 @@
             <groupId>net.sf.saxon</groupId>
             <artifactId>saxon</artifactId>
             <version>8.7</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito-all.version}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
